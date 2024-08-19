@@ -57,7 +57,7 @@ def make_configurations(npcs,nsamples):
                     if j < num_cols - 1 and lattice[i, j + 1] == 1:  # Right neighbor
                         adjacency_matrix[i * num_cols + j, i * num_cols + (j + 1)] = 1
 
-        # Build the 20-epochs_from_pc0.55_2nd-dimensional node feature vectors
+        # Build the 2-dimensional node feature vectors
         for i in range(num_rows):
             for j in range(num_cols):
 

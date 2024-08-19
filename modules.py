@@ -85,8 +85,8 @@ class MyDataset(Dataset):
             'node_features': node_features
         }
         # node feature
-        # If at the top boundary,    (occ_status,20-epochs_from_pc0.6)
-        # If at the bottom boundary, (occ_status,20-epochs_from_pc0.55_2nd)
+        # If at the top boundary,    (occ_status,1)
+        # If at the bottom boundary, (occ_status,2)
         # Otherwise,                 (occ_status,0)
         return sample
 
