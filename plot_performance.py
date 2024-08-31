@@ -52,7 +52,6 @@ for i in range(count):
     y_values = df1.iloc[0].values
 
     df2.columns = x_values
-    df2.index = np.linspace(0.05,1,20)
 
     axes[i].plot(x_values, y_values, 'bo-', label='Mean')
     axes[i].set_xlim(0.0, 1.0)
@@ -79,10 +78,9 @@ axes[0].set_xlim(0.0, 1)
 axes[0].set_ylim(0.0, 1)
 axes[0].set_title("epochs=100")
 
-axes[1].set_xlim(0.0, 1)
 axes[1].imshow(mean_df2_values, cmap='viridis', origin='lower')  # 'cmap' specifies the colormap
 axes[1].set_xticks(ticks=np.arange(len(df2.columns)), labels=np.round(df2.columns, 3), fontsize=6)
-axes[1].set_yticks(ticks=np.arange(len(df2.index)), labels=np.round(df2.index, 3), fontsize=6)
+axes[1].set_yticks(ticks=np.arange(21)-0.5, labels=np.round(np.linspace(0.0,1,21),3), fontsize=6)
 axes[1].set_xlabel('parameter pc')
 axes[1].set_ylabel('range of p')
 
