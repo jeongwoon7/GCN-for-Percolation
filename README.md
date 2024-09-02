@@ -2,7 +2,7 @@
 
 Graph convolutional network-based unsupervised learning of percolation transition
 
-by Moon-Hyun Cha and Jeongwoon Hwang, submitted August, 2024
+by Moon-Hyun Cha and Jeongwoon Hwang, submitted September 2024
 
 
 1. Data for ML models : configurations.csv, convifurations_test.csv
